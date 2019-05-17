@@ -1,0 +1,21 @@
+Function discription
+Title: Create a model of the dish
+User:  Developer
+Goal: Create the dish of Chinese food in the menu.
+Why: Consumers can have a variety of food choices.
+==================================
+Title: Create the database
+User: Developer
+Goal:Upload the dishes to the database
+Why:Able to upload the name and price of food to the database
+==================================
+Title: Food choices and look at different types of food
+User: Consumers
+Goal:Customers can choose the food they want from the menu
+Why:Offer customers a variety of options
+==================================
+Title: Shopping cart function
+User: Consumers
+Goal:Customers can add the food they want to their cart by selecting it
+Why:Ability to give customers the ability to buy food
+==================================
