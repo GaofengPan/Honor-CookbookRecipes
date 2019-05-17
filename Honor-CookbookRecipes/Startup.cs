@@ -66,6 +66,8 @@ namespace Honor_CookbookRecipes
 
             app.UseAuthentication();
 
+            DummyData.Initialize(app);
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

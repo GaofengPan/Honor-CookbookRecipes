@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Honor_CookbookRecipes.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,5 +13,7 @@ namespace Honor_CookbookRecipes.Data
             : base(options)
         {
         }
+        public DbSet<Cmenu> Cmenus { get; set; }
+        public DbSet<Dish> Dishes { get; set; }
     }
 }
