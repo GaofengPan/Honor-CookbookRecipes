@@ -40,7 +40,11 @@ namespace Honor_CookbookRecipes.Data.Migrations
 
                     b.Property<int?>("CmenuId");
 
+                    b.Property<string>("CmenuName");
+
                     b.Property<string>("DishName");
+
+                    b.Property<string>("Prices");
 
                     b.HasKey("DishId");
 

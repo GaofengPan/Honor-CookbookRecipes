@@ -64,34 +64,39 @@ namespace Honor_CookbookRecipes.Data
         {
             List<Dish> Dishes = new List<Dish>() {
             new Dish {
-                DishName = "LeBron",
+                DishName = "Roast goose",
                 CmenuName = context.Cmenus.Find("Cantoneses cuisine").Name,
-                Prices = "$20"
+                Prices = "$25"
             },
             new Dish {
-                DishName = "Kevin",
+                DishName = "Spicy Chicken",
                 CmenuName = context.Cmenus.Find("Sichuan cuisine").Name,
                 Prices = "$20"
             },
             new Dish {
-                DishName = "Stephen",
+                DishName = "Hotpot",
+                CmenuName = context.Cmenus.Find("Sichuan cuisine").Name,
+                Prices = "$50"
+            },
+            new Dish {
+                DishName = "Spring roll",
                 CmenuName = context.Cmenus.Find("Shandong cuisine").Name,
                 Prices = "$20"
             },
             new Dish {
-                DishName = "James",
+                DishName = "Salted duck",
                 CmenuName = context.Cmenus.Find("Jiangsu cuisine").Name,
-                Prices = "$20"
+                Prices = "$25"
             },
             new Dish {
-                DishName = "James",
+                DishName = "Dim sum",
                 CmenuName = context.Cmenus.Find("Snacks").Name,
-                Prices = "$20"
+                Prices = "$30"
             },
             new Dish {
-                DishName = "James",
+                DishName = "Apple Juice",
                 CmenuName = context.Cmenus.Find("Drink").Name,
-                Prices = "$20"
+                Prices = "$10"
             },
         };
 
