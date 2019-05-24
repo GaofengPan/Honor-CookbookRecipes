@@ -1,4 +1,4 @@
-Minutes of meeting in week 1
+Minutes of meeting in Sprint#1
 2019.5.10  Friday
 After our group discussion, our project is to make a recipe. 
 The plan for this week is that we first complete the menu. 
