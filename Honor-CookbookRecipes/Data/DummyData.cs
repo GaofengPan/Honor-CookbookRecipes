@@ -64,39 +64,53 @@ namespace Honor_CookbookRecipes.Data
         {
             List<Dish> Dishes = new List<Dish>() {
             new Dish {
+                CmenuId=context.Cmenus.FirstOrDefault(c =>c.Name== "Cantoneses cuisine").CmenuId,
                 DishName = "Roast goose",
-                CmenuName = context.Cmenus.Find("Cantoneses cuisine").Name,
-                Prices = "$25"
+                CmenuName = "Cantoneses cuisine",
+                Prices = "$25",
+                PictureUrl="/images/rd.jpg"
             },
             new Dish {
+                CmenuId=context.Cmenus.FirstOrDefault(c =>c.Name== "Sichuan cuisine").CmenuId,
                 DishName = "Spicy Chicken",
-                CmenuName = context.Cmenus.Find("Sichuan cuisine").Name,
-                Prices = "$20"
+                CmenuName = "Sichuan cuisine",
+                Prices = "$20",
+                PictureUrl="/images/chicken.jpg"
             },
             new Dish {
+                CmenuId=context.Cmenus.FirstOrDefault(c =>c.Name== "Sichuan cuisine").CmenuId,
                 DishName = "Hotpot",
-                CmenuName = context.Cmenus.Find("Sichuan cuisine").Name,
-                Prices = "$50"
+                CmenuName ="Sichuan cuisine",
+                Prices = "$50",
+                PictureUrl="images/hp.jpg"
             },
             new Dish {
+                CmenuId=context.Cmenus.FirstOrDefault(c =>c.Name== "Shandong cuisine").CmenuId,
                 DishName = "Spring roll",
-                CmenuName = context.Cmenus.Find("Shandong cuisine").Name,
-                Prices = "$20"
+                CmenuName = "Shandong cuisine",
+                Prices = "$20",
+                PictureUrl="/images/roll.jpg"
             },
             new Dish {
+                CmenuId=context.Cmenus.FirstOrDefault(c =>c.Name== "Jiangsu cuisine").CmenuId,
                 DishName = "Salted duck",
-                CmenuName = context.Cmenus.Find("Jiangsu cuisine").Name,
-                Prices = "$25"
+                CmenuName = "Jiangsu cuisine",
+                Prices = "$25",
+                PictureUrl="images/sduck.jpg"
             },
             new Dish {
+                CmenuId=context.Cmenus.FirstOrDefault(c =>c.Name== "Snacks").CmenuId,
                 DishName = "Dim sum",
-                CmenuName = context.Cmenus.Find("Snacks").Name,
-                Prices = "$30"
+                CmenuName = "Snacks",
+                Prices = "$30",
+                PictureUrl="/images/dimsum.jpg"
             },
             new Dish {
+                CmenuId=context.Cmenus.FirstOrDefault(c =>c.Name== "Drink").CmenuId,
                 DishName = "Apple Juice",
-                CmenuName = context.Cmenus.Find("Drink").Name,
-                Prices = "$10"
+                CmenuName = "Drink",
+                Prices = "$10",
+                PictureUrl="/images/apple.jpg"
             },
         };
 

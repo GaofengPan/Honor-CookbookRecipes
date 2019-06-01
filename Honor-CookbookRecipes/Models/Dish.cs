@@ -8,9 +8,17 @@ namespace Honor_CookbookRecipes.Models
     public class Dish
     {
         public int DishId { get; set; }
+
         public string DishName { get; set; }
+
+        public string CmenuName { get; set; }
+        public string Prices { get; set; }
+
+        public string PictureUrl { get; set; }
+
+        public int CmenuId { get; set; }
         public Cmenu Cmenu { get; set; }
-        public string CmenuName { get; internal set; }
-        public string Prices { get; internal set; }
+
+
     }
 }

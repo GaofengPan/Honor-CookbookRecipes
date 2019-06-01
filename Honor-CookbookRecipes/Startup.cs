@@ -68,6 +68,7 @@ namespace Honor_CookbookRecipes
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
         }
     }
 }

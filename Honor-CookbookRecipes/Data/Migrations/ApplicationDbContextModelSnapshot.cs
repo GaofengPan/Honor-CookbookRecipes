@@ -38,11 +38,13 @@ namespace Honor_CookbookRecipes.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("CmenuId");
+                    b.Property<int>("CmenuId");
 
                     b.Property<string>("CmenuName");
 
                     b.Property<string>("DishName");
+
+                    b.Property<string>("PictureUrl");
 
                     b.Property<string>("Prices");
 
@@ -222,7 +224,8 @@ namespace Honor_CookbookRecipes.Data.Migrations
                 {
                     b.HasOne("Honor_CookbookRecipes.Models.Cmenu", "Cmenu")
                         .WithMany("Dishes")
-                        .HasForeignKey("CmenuId");
+                        .HasForeignKey("CmenuId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
