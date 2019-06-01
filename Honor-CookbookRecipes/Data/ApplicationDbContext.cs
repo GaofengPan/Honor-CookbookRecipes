@@ -14,6 +14,6 @@ namespace Honor_CookbookRecipes.Data
         {
         }
         public DbSet<Cmenu> Cmenus { get; set; }
-        public DbSet<Dish> Dishes { get; set; }
+        public DbSet<Scart> Scarts { get; set; }
     }
 }
