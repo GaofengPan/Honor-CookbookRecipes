@@ -1,4 +1,5 @@
 Minutes of meeting in Sprint#1
+
 2019.5.10  Friday
 After our group discussion, our project is to make a recipe. 
 The plan for this week is that we first complete the menu. 
@@ -15,3 +16,50 @@ After several days of efforts, the task progress of each team member was carried
 5.17.
 Our team's project tasks this week have been completed, and all team members have completed their tasks. As follows:
 Kaiyun Liu and Jiawen Huang collected images, added text and sent them to Pengbo Wang and Gaofeng Pan according to the menu listed by Pengbo Wang and Gaofeng Pan . It has been uploaded to the website. This week's task is completed. 
+
+
+
+Minutes of meeting in Sprint#2
+
+05.20
+Today we talked about increasing the number of types of foods.
+Roast goose and spicy chicken are the new choices we've decided on at today's meeting. Pengbowang and gaofengpan are responsible for uploading to the database.
+
+05.21
+There is a problem with the database today. Kaiyunliu and jiawenhuang maintain the database.
+
+05.23
+Today the database has been maintained, and the categories have been uploaded to the database successfully.
+After all the work is finished, briefly summarize the next week's work, and start to plan the next week's task.
+
+
+Minutes of meeting in Sprint#3
+
+5.27
+The main focus of this week's meeting is to set up a feature that will allow consumers to browse through menus and check prices, as well as related pictures, in a small app.
+
+5.28
+This meeting is mainly about division of labor. Kaiyun Liu and jiawenHuang are responsible for providing the data. Pengbo Wang and Gaofeng Pan are responsible for data uploading and maintenance.
+
+5.29
+Through market research, Kaiyun Liu and Jiawen Huang set prices for various dishes and collected more pictures of dishes for consumers'reference. Finally, it was submitted to Pengbo Wang and Gaofeng Pan. And they uploaded the data to the website.
+
+5.30
+  Each member of the team has completed their respective responsibilities. Overall, this week's task has been very successful.
+
+  
+  
+Minutes of meeting in Sprint#4
+
+06-01
+In our meeting today, we mentioned adding one more function to our ordering platform. It's adding our favorite dishes to the cart. This function will be developed by us.
+Add your favorite dishes to your cart.
+06-02
+We have developed this new feature and are now in the late testing phase. On this basis, Pengbowang and gaofengpan will develop a new function to remove dishes from shopping carts.
+We found that the shopping cart implementation was not ideal.
+Jiawenhuang and kaiyunliu will carry out the later experimental work
+The work is progressing very fast today. It should be finished soon.
+06-03
+Prepare for your presentation.
+06-04
+Today we have completed all the development work
