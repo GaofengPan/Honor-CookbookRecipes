@@ -28,8 +28,8 @@ namespace Honor_CookbookRecipes.Data
                 context.Cmenus.AddRange(Cmenus);
                 context.SaveChanges();
 
-                var Dishes = DummyData.GetDishes(context).ToArray();
-                context.Dishes.AddRange(Dishes);
+                var Scarts = DummyData.GetScarts(context).ToArray();
+                context.Scarts.AddRange(Scarts);
                 context.SaveChanges();
             }
         }
@@ -38,83 +38,95 @@ namespace Honor_CookbookRecipes.Data
         {
             List<Cmenu> Cmenus = new List<Cmenu>() {
             new Cmenu() {
+                DishName = "Roast goose",
+                Prices = "$30",
                 Name="Cantoneses cuisine",
+                PictureUrl="images/rd.jpg"
             },
             new Cmenu() {
+                DishName = "Spicy Chicken",
+                Prices = "$25",
                 Name="Sichuan cuisine",
+                PictureUrl="images/chicken.jpg"
+
             },
             new Cmenu() {
-                Name="Shandong cuisine",
+                DishName = "Hotpot",
+                Prices = "$50",
+                Name="Sichuan cuisine",
+                PictureUrl="images/hp.jpg"
+
             },
             new Cmenu() {
-                Name="Jiangsu cuisine",
+                DishName = "Spring roll",
+                Prices = "$10",
+                Name = "Shandong cuisine",
+                PictureUrl="images/roll.jpg"
             },
             new Cmenu() {
+                DishName = "Salted duck",
+                Prices = "$25",
+                Name = "Jiangsu cuisine",
+                PictureUrl="images/sduck.jpg"
+            },
+            new Cmenu() {
+                DishName = "Dim sum",
+                Prices = "$20",
                 Name="Snacks",
+                PictureUrl="/images/dimsum.jpg" 
             },
             new Cmenu() {
-                Name="Drink",
+                DishName = "Apple Juice",
+                Prices = "$10",
+                Name = "Drink",
+                PictureUrl="/images/apple.jpg"
             },
         };
 
             return Cmenus;
         }
 
-        public static List<Dish> GetDishes(ApplicationDbContext context)
+        public static List<Scart> GetScarts(ApplicationDbContext context)
         {
-            List<Dish> Dishes = new List<Dish>() {
-            new Dish {
+            List<Scart> Scarts = new List<Scart>() {
+            new  Scart {
                 CmenuId=context.Cmenus.FirstOrDefault(c =>c.Name== "Cantoneses cuisine").CmenuId,
                 DishName = "Roast goose",
-                CmenuName = "Cantoneses cuisine",
-                Prices = "$25",
-                PictureUrl="/images/rd.jpg"
+                Prices = "$30"
             },
-            new Dish {
+            new  Scart {
                 CmenuId=context.Cmenus.FirstOrDefault(c =>c.Name== "Sichuan cuisine").CmenuId,
                 DishName = "Spicy Chicken",
-                CmenuName = "Sichuan cuisine",
-                Prices = "$20",
-                PictureUrl="/images/chicken.jpg"
+                Prices = "$25"
             },
-            new Dish {
+            new  Scart {
                 CmenuId=context.Cmenus.FirstOrDefault(c =>c.Name== "Sichuan cuisine").CmenuId,
                 DishName = "Hotpot",
-                CmenuName ="Sichuan cuisine",
-                Prices = "$50",
-                PictureUrl="images/hp.jpg"
+                Prices = "$50"
             },
-            new Dish {
+            new  Scart {
                 CmenuId=context.Cmenus.FirstOrDefault(c =>c.Name== "Shandong cuisine").CmenuId,
                 DishName = "Spring roll",
-                CmenuName = "Shandong cuisine",
-                Prices = "$20",
-                PictureUrl="/images/roll.jpg"
+                Prices = "$10"
             },
-            new Dish {
+            new  Scart {
                 CmenuId=context.Cmenus.FirstOrDefault(c =>c.Name== "Jiangsu cuisine").CmenuId,
                 DishName = "Salted duck",
-                CmenuName = "Jiangsu cuisine",
-                Prices = "$25",
-                PictureUrl="images/sduck.jpg"
+                Prices = "$25"
             },
-            new Dish {
+            new  Scart {
                 CmenuId=context.Cmenus.FirstOrDefault(c =>c.Name== "Snacks").CmenuId,
                 DishName = "Dim sum",
-                CmenuName = "Snacks",
-                Prices = "$30",
-                PictureUrl="/images/dimsum.jpg"
+                Prices = "$20"
             },
-            new Dish {
+            new  Scart{
                 CmenuId=context.Cmenus.FirstOrDefault(c =>c.Name== "Drink").CmenuId,
                 DishName = "Apple Juice",
-                CmenuName = "Drink",
-                Prices = "$10",
-                PictureUrl="/images/apple.jpg"
+                Prices = "$10"
             },
         };
 
-            return Dishes;
+            return Scarts;
         }
     }
 }

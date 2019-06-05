@@ -25,34 +25,36 @@ namespace Honor_CookbookRecipes.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("DishName");
+
                     b.Property<string>("Name");
+
+                    b.Property<string>("PictureUrl");
+
+                    b.Property<string>("Prices");
 
                     b.HasKey("CmenuId");
 
                     b.ToTable("Cmenus");
                 });
 
-            modelBuilder.Entity("Honor_CookbookRecipes.Models.Dish", b =>
+            modelBuilder.Entity("Honor_CookbookRecipes.Models.Scart", b =>
                 {
-                    b.Property<int>("DishId")
+                    b.Property<int>("ScartId")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("CmenuId");
 
-                    b.Property<string>("CmenuName");
-
                     b.Property<string>("DishName");
-
-                    b.Property<string>("PictureUrl");
 
                     b.Property<string>("Prices");
 
-                    b.HasKey("DishId");
+                    b.HasKey("ScartId");
 
                     b.HasIndex("CmenuId");
 
-                    b.ToTable("Dishes");
+                    b.ToTable("Scarts");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -220,10 +222,10 @@ namespace Honor_CookbookRecipes.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("Honor_CookbookRecipes.Models.Dish", b =>
+            modelBuilder.Entity("Honor_CookbookRecipes.Models.Scart", b =>
                 {
                     b.HasOne("Honor_CookbookRecipes.Models.Cmenu", "Cmenu")
-                        .WithMany("Dishes")
+                        .WithMany("Scarts")
                         .HasForeignKey("CmenuId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
